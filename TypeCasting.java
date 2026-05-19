@@ -24,5 +24,7 @@ public class TypeCasting {
         System.out.println("Original int value: " + num5);
         System.out.println("Explicit type casting (int to char): " + letter2);
 
+        
+
     }
 }
