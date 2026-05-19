@@ -1,3 +1,4 @@
+package basics;
 import java.util.Scanner;
 public class TSA_OfCuboid {
     public static void main(String[]args) {
