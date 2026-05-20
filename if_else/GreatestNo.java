@@ -5,30 +5,30 @@ public class GreatestNo {
         Scanner sc = new Scanner(System.in);
 
         //taking input for three numbers
-        System.out.print("Enter the first number: ");
+        System.out.print("Enter the first number a : ");
         int a = sc.nextInt();
-        System.out.print("Enter the second number: ");
+        System.out.print("Enter the second number b : ");
         int b = sc.nextInt();
-        System.out.print("Enter the third number: ");
+        System.out.print("Enter the third number c : ");
         int c = sc.nextInt();
 
-        int greatest =0;
+        String greatest;
 
         //comparing the three numbers to find the greatest
-        if(a>=b) {
-            if(a>=c) { greatest =a;}
-            else { greatest = c;}
-        }
-        else if(b>=a) {
-            if(b>=c) { greatest = b;}
-            else { greatest = c;}
-        }
-        else {
-            if(c>=a && c>=b) { greatest = c;}
-        }
+       if (a==b && a==c) { greatest = "All are equal."; }
+       else if(a==b && a>c) { greatest = "a and b both are equal and greateer than c.";}
+       else if(a==b && c>a) { greatest = "c is greatest.";}
+       else if(b==c && a>c) { greatest = "a is greatest.";}
+       else if(b==c && c>a) { greatest = "b and c both are equal and greateer than a.";}
+       else if(a==c && a>b) { greatest = "a and c both are equal and greateer than b.";}
+       else if(a==c && b>c) { greatest = "b is greatest.";}
+       else if (a>b && a>c) { greatest = "a is greatest.";}
+       else if (b>a && b>c) { greatest = " b is greatest.";}
+       else { greatest = "c is greatest.";}
+       
 
         //printing the greatest number
-        System.out.println("The greatest number is: " + greatest);
+        System.out.println(greatest);
         sc.close();
     }
 }
