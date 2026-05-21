@@ -5,5 +5,6 @@ public class PrintNumbers {
         for(a=1; a<11; a++) {
             System.out.println(a);
         }
+        System.out.println(a);
     }
 }
