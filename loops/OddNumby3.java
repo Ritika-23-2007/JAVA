@@ -1,8 +1,8 @@
 package loops;
-public class PrintNumbers {
+
+public class OddNumby3 {
     public static void main(String[]args) {
-        int a;
-        for(a=1; a<11; a++) {
+        for (int a=3 ; a<=100; a+=6) {
             System.out.println(a);
         }
     }
