@@ -5,20 +5,20 @@ public class ReverseNumber {
         Scanner sc = new Scanner(System.in);
 
         //Taking input from user.
-        System.out.println("Enter an integer : ");
+        System.out.print("Enter an integer: ");
         long number = sc.nextLong();
         long value = Math.abs(number);
 
         //Reversing input number.
-        int reverse = 0;
+        long reverse = 0;
         while (value != 0) {
-            reverse *= 10;
-            reverse += value % 10;
+            reverse = reverse * 10 + value % 10;
             value /= 10;
         }
+        reverse = number < 0 ? -reverse : reverse;
 
         //Print output & close scanner class.
-        System.out.println("The reverse of " +number+ " is : " +reverse);
+        System.out.println("The reverse of " + number + " is: " + reverse);
         sc.close();
     }
 }
