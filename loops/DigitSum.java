@@ -7,8 +7,7 @@ public class DigitSum {
         //Taking input from the user.
         System.out.print("Enter an integer : ");
         int number = sc.nextInt();
-        //int value = Math.abs(number);
-        int value = number;
+        long value = Math.abs(number);
         
         //Calculating sum of digits
         int sum = 0;
