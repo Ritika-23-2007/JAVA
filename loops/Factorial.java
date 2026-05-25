@@ -2,9 +2,9 @@ package loops;
 import java.util.Scanner;
 public class Factorial {
 
-    public static int give_factorial(int number) {
+    public static int giveFactorial(int number) {
         int factorial = 1;
-        for (int n = 1; n <= number ; n++) {
+        for (int n = 2; n <= number ; n++) {
         factorial *= n;
         }
         return factorial;
@@ -14,7 +14,7 @@ public class Factorial {
 
         System.out.print("Enter a positive integer: ");
         int input = sc.nextInt();
-        System.out.println("The factorial of " + input + " is: " + give_factorial(input));
+        System.out.println("The factorial of " + input + " is: " + giveFactorial(input));
         sc.close();
     }
 }
