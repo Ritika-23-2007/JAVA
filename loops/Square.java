@@ -2,24 +2,23 @@ package loops;
 import java.util.Scanner;
 public class Square {
     public static void main(String[] args) {
-        java.util.Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        //Take input from user
-        System.out.print("Enter the side dimension: ");
+        System.out.print("Enter the square side length: ");
         int side = sc.nextInt();
 
-        if (side <= 0 ) {
-            System.out.println("Please enter a positive integer only.");
+        if (side <= 0) {
+            System.out.println("Please enter a positive integer.");
+            sc.close();
+            return;
         }
-        else {
-            //Print Square
-            for (int length = 1; length <= side; length++) {
-                for (int breadth = 1; breadth <= side; breadth++) {
-                    System.out.print("*");
-                }
-                System.out.println();
+        //Print Square
+        for (int length = 1; length <= side; length++) {
+            for (int breadth = 1; breadth <= side; breadth++) {
+                System.out.print("*");
             }
-        }
-        sc.close();
+            System.out.println();
+         }
+         sc.close();
     }
 }
