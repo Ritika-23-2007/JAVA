@@ -14,7 +14,7 @@ public class ArrayBasics {
         myArray[4] = 25;
 
         //only declaration of an array 
-        int[] anotherArray; // This declares an array reference but does not allocate memory for the array.
+        //int[] anotherArray; // This declares an array reference but does not allocate memory for the array.
 
         // Accessing elements of the array
         System.out.println("First element: " + numbers[0]);
