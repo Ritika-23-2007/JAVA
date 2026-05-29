@@ -1,21 +1,20 @@
 package arrays;
-import java.util.Scanner;
+
 public class ReverseArray {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int[] originalArray = CreateIntArray.createIntArray(sc);
-        int[] reversedArray = new int[originalArray.length];
-        for (int i = 0; i < originalArray.length; i++) {
-            reversedArray[i] = originalArray[originalArray.length - 1 - i];
+    public static int[] reverseComplete(int[] array) {
+        for (int i = 0, j = array.length - 1; i < j; i++, j--) {
+            int temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
         }
-        System.out.println("Original Array:");
-        for (int num : originalArray) {
-            System.out.print(num + " ");
+        return array;
+    }
+    public static int[] reversePartial(int[] array, int start, int end) {
+        for (int i = start, j = end; i < j; i++, j--) {
+            int temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
         }
-        System.out.println("\nReversed Array:");
-        for (int num : reversedArray) {
-            System.out.print(num + " ");
-        }
-        sc.close();
+        return array;
     }
 }
