@@ -1,6 +1,6 @@
 package arrays;
 import java.util.Scanner;
-public class ReversedArray {
+public class NewReversedArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] originalArray = CreateIntArray.createIntArray(sc);
