@@ -6,7 +6,7 @@
 
 package arrays;
 public class WaveArray {
-    public static int[] wave(int[] arr) {
+    public static void wave(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i += 2) {
             // Swap arr[i] and arr[i + 1]
@@ -14,6 +14,5 @@ public class WaveArray {
             arr[i] = arr[i + 1];
             arr[i + 1] = temp;
         }
-        return arr;
     }
 }
