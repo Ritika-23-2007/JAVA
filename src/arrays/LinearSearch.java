@@ -1,4 +1,10 @@
 package arrays;
+
+//linear search is a simple search algorithm 
+// that checks each element of the array sequentially until the target element is found 
+// or the end of the array is reached.
+//  It has a time complexity of O(n) in worst case, where n is number of elements in the array.
+
 import java.util.Scanner;
 public class LinearSearch {
     public static void search(int[] array, int target) {
