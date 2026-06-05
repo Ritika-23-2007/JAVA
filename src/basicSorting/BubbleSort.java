@@ -42,9 +42,7 @@ public class BubbleSort {
         int[] arr = CreateIntArray.createIntArray(sc);
         System.out.println("Before sorting:");
         printArray(arr);
-        while (!isSorted(arr)) {
-            bubbleSort(arr);
-        }
+        bubbleSort(arr);
         System.out.println("After sorting:");
         printArray(arr);
     }

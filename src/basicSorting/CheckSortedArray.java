@@ -1,4 +1,4 @@
-package arrays;
+package basicSorting;
 
 public class CheckSortedArray {
     public static boolean isSorted(int[] array) {
