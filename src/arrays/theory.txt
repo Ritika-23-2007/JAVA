@@ -1,0 +1,49 @@
+## What is data structure?
+Different data structures store a lot of data in different manner. 
+eg arrays, linked lists, stack, queue, tree, graphs, hash maps etc.
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+## What is array?
+An array is a linear data structure of fixed length size.
+In an array, each element has its own unique index which always begins with 0 and determines its position.
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+## How to make an array?
+Declaration- 
+int [] array1 = new int [5];
+initialization - 
+array1[3] = 345;
+declaration and initialization -
+int array2 = {12,34,25,47,65,53,78};
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+## Accessing all the elements of an array 
+for(int x : array1) {
+    System.out.println(x);
+}
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+## What is array index out of bounds exception ?
+whenever we try to access, print or input elements of invalid index, the compiler throws an exception called array index out of bounds exception.
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+## when integer is passed into methods, they are passed by values but arrays are passed by reference. why?
+Java is strictly pass-by-value for everything.
+
+Primitives (Like int)
+While passing a primitive datatype (like int, double, or boolean) into method, Java copies actual value (e.g., the number 5) into a new local variable inside the method.
+How it works: The method gets its own isolated copy of the number.
+The Result: Any changes made to that variable inside the method stay inside the method. The original variable outside remains completely untouched.
+
+Objects and Arrays
+In Java, arrays are treated as objects.
+When you create an array or an object, the variable doesn't actually hold the array itself. 
+Instead, it holds a reference (think of it as a memory address or a pointer) that says, "The actual data lives over there in memory (the Heap)."
+When you pass an array into a method:
+Java copies the value of the variable.
+But what is that value? It’s the reference (memory address).
+Therefore, the method receives a copy of the address pointing to the exact same array in memory.
+Because both the original variable and the method's parameter point to the exact same room in memory, changes to the contents of the array will be visible outside.
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+##
