@@ -29,12 +29,12 @@ ________________________________________________________________________________
 
 ## when integer is passed into methods, they are passed by values but arrays are passed by reference. why?
 Java is strictly pass-by-value for everything.
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Primitives (Like int)
 While passing a primitive datatype (like int, double, or boolean) into method, Java copies actual value (e.g., the number 5) into a new local variable inside the method.
 How it works: The method gets its own isolated copy of the number.
 The Result: Any changes made to that variable inside the method stay inside the method. The original variable outside remains completely untouched.
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Objects and Arrays
 In Java, arrays are treated as objects.
 When you create an array or an object, the variable doesn't actually hold the array itself. 
@@ -46,4 +46,36 @@ Therefore, the method receives a copy of the address pointing to the exact same 
 Because both the original variable and the method's parameter point to the exact same room in memory, changes to the contents of the array will be visible outside.
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-##
+##What is shallow copy and deep copy?
+in simple language shallow copy refers to same array but different names
+ and since both of them refer to same thing so changes made in one are also visible in other.
+ whereas deep copy refers to two seperate arrays which are exactly same 
+ and since this time these two things are different entities, changes made in one will not affect other.
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+What are few standard built in methods used for arrays manipulation?
+The few common built in methods are
+arrayName.length - returns the number of elements in that array.
+Arrays.toString(arrayName )- Converts the contents of an array into a clean,string formatted as [element1, element2, ...].
+Arrays.sort(arrayName) - sorts the elements of array in ascending order.
+Arrays.copyOf(arrayName, length) - creates a deep copy of given array.
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+ALGORITHMS THAT OPERATE ON ARRAYS
+***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+# How do you explain Linear Search?
+Linear search is also known as sequential search.
+It a search algorithm that finds the position of target value within a list.
+It does so by checking each element sequentially, one after other, until a match is found or the entire list has been searched.
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+# What is two pointer technique?
+The two pointer technique is also an algorithm.
+It uses two reference variables(pointers) to track indices in data structure, most commonly a static array.
+And solves a problem with optimal time complexity.
+It's main advantage-
+It is generally used nstead of nested loops that result in an inefficient time complexity ie O(n^2).
+Thus it manipulates these two pointers to scan the array in a single pass and achieves O(n) time complexity and O(1) space complexity.
