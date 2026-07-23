@@ -79,3 +79,6 @@ And solves a problem with optimal time complexity.
 It's main advantage-
 It is generally used nstead of nested loops that result in an inefficient time complexity ie O(n^2).
 Thus it manipulates these two pointers to scan the array in a single pass and achieves O(n) time complexity and O(1) space complexity.
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+# define arraylists in java.
