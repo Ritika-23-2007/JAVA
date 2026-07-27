@@ -1,0 +1,19 @@
+# What is bubble sort?
+bubble sort is a comparison based sorting algorithm.
+IT works by repeatedly stepping through a list and then comparing adjacent elements.
+and then swapping them if they are in wrong order.
+
+Its worst case time complexity is O(n square) and it occurs when the array is in exactly in reversed order.
+Its best case time complexity is O(n) and it occurs when array is already sorted and the algo just verifies this in a single pass.
+and space complexity is O(1) because it operates directly on array in place and does not use extra memory.
+
+Because of its worst case huge time complexity, it is rarely used to sort arrays in java.
+and even the built in Arrays.sort function is much better than this in terms of time complexity.
+it can be used to
+ -check if an array is already sorted.
+ -on tiny datasets.
+
+note- insertion sort is strictly superior to bubble sort because it does all the tasks of bubble sort even much faster.
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+#
