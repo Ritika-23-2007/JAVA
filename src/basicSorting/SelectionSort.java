@@ -1,4 +1,11 @@
 package basicSorting;
+
+/**
+ * Selection Sort is a straightforward, comparison-based sorting algorithm.
+ * It works by repeatedly finding the smallest (or largest) element from the unsorted part of an array.
+ *  and moving it to the beginning.
+ */
+
 public class SelectionSort { 
 
     public static void sort(int[] array) {
