@@ -16,4 +16,12 @@ it can be used to
 note- insertion sort is strictly superior to bubble sort because it does all the tasks of bubble sort even much faster.
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-#
+# What is selection sort?
+Selection sort is a strainghtforward comparison based algorithm.
+It work by repeatedly finding the smallest and largest elements form the unsorted part of array
+and then swapping them with the first or last element.
+
+Its time complexity is always O(n^2).
+and space complexity is O(1).
+
+its performance in time is even worse than bubble sort. 
