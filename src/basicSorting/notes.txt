@@ -13,6 +13,14 @@ it can be used to
  -check if an array is already sorted.
  -on tiny datasets.
 
+Its pluspoints are
+ - useful when array is nearly sorted and just a few elements are at wrong position.
+ - when a problem restricts to adjacent swaps only
+ - if we need to sort k largest/ smallest elements without disturbing order of other elements
+ - if int a1 = 2 and int a2 = 2, it does not change their relative order while sorting.
+ - it is a stable sorting algorithm.
+ - when we might need to shift non zero elements to end without disturbing their relative order
+
 note- insertion sort is strictly superior to bubble sort because it does all the tasks of bubble sort even much faster.
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
@@ -24,4 +32,6 @@ and then swapping them with the first or last element.
 Its time complexity is always O(n^2).
 and space complexity is O(1).
 
-its performance in time is even worse than bubble sort. 
+its performance in time is even worse than bubble sort.
+
+#insertion sort
