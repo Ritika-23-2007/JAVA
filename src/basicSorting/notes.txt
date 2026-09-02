@@ -21,6 +21,15 @@ Its pluspoints are
  - it is a stable sorting algorithm.
  - when we might need to shift non zero elements to end without disturbing their relative order
 
+Note on "Rabbits and Turtles": 
+In standard Bubble Sort, largest elements move to rightmost position first
+small elements at the end of an array (called "turtles") move to the left by only one position per pass,
+which severely degrades performance. 
+In reverse variation where smallest elements reach left most position first, 
+large elements near the beginning become the turtles, moving only one step right per pass.
+Combining both directions leads to Cocktail Shaker Sort (Bidirectional Bubble Sort), 
+this alternates left-to-right and right-to-left passes to solve this issue. 
+
 note- insertion sort is strictly superior to bubble sort because it does all the tasks of bubble sort even much faster.
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
