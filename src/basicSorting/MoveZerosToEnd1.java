@@ -29,7 +29,7 @@ public class MoveZerosToEnd1 {
         for (int i = nonZeroIndex; i < n; i++) {
             arr[i] = 0;
         }
-    }
+    }}
 
     // using two pointer (opp direction) approach- 
     //it can be solved using two pointer approach in opposite direction as well, 
