@@ -32,6 +32,15 @@ this alternates left-to-right and right-to-left passes to solve this issue.
 
 note- insertion sort is strictly superior to bubble sort because it does all the tasks of bubble sort even much faster.
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+# cocktail sort
+
+in standard bubble sort, the iteration occurs from left to right 
+and the largest element is sorted first in the rightmost position
+whereas in reverse sort, the iteration occurs from right to left
+and the smallest element is sorted first at leftmost position
+cocktail sort is the merged version of standard sort and reversed sort
+in one outer iteration, firstly the inner loop runs as standard bubble sort and then as reversed one.
+this improves the time taken. 
 
 # What is selection sort?
 Selection sort is a strainghtforward comparison based algorithm.
