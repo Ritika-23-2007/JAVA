@@ -1,7 +1,7 @@
 package basicSorting;
 
 public class largestSelectionSort {
-    public static void largestSelectionSort(int[] arr) {
+    public static void largestFirstSelectionSort(int[] arr) {
         int n = arr.length;
 
         for (int i = n - 1; i > 0; i--) {
