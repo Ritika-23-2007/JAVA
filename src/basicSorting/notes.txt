@@ -5,7 +5,7 @@ and then swapping them if they are in wrong order.
 
 Its worst case time complexity is O(n square) and it occurs when the array is in exactly in reversed order.
 Its best case time complexity is O(n) and it occurs when array is already sorted and the algo just verifies this in a single pass.
-and space complexity is O(1) because it operates directly on array in place and does not use extra memory.
+and space complexity is O(1) because it operates directly on array in place and does not use extra space.
 
 Because of its worst case huge time complexity, it is rarely used to sort arrays in java.
 and even the built in Arrays.sort function is much better than this in terms of time complexity.
@@ -16,8 +16,8 @@ it can be used to
 Its pluspoints are
  - useful when array is nearly sorted and just a few elements are at wrong position.
  - when a problem restricts to adjacent swaps only
- - if we need to sort k largest/ smallest elements without disturbing order of other elements
- - if int a1 = 2 and int a2 = 2, it does not change their relative order while sorting.
+ - if we need to sort k largest/ smallest elements
+ - if int a1 = 2 and int a2 = 2, it does not change their relative order while sorting i.e. we need a stable sorting algorithm.
  - it is a stable sorting algorithm.
  - when we might need to shift non zero elements to end without disturbing their relative order
 
@@ -47,9 +47,22 @@ Selection sort is a strainghtforward comparison based algorithm.
 It work by repeatedly finding the smallest and largest elements form the unsorted part of array
 and then swapping them with the first or last element.
 
-Its time complexity is always O(n^2).
+Its time complexity is always O(n^2). in all cases- worst case, average case and even the best case.
 and space complexity is O(1).
 
-its performance in time is even worse than bubble sort.
+the total number of swapping in bubble sort in every single pass is usually more than one 
+whereas in selection sort, each pass occurs with one single swapping
+in bubble sort, sorting can occur faster than expected but not in selection sort
+moreover, it is also an unstable sorting algo.
+
+in bubble sort, number of passes can be reduced by optimization, but selection sort cannot be optimized to reduce any iteration
+hence, its performance in time is even worse than bubble sort.
+
+cases when selection sort can be most useful
+- it has relatively less number of swaps so when memory writes are extremely costly, it is of great use.
+This is the primary reason to choose selection sort over other algorithms. 
+Selection sort makes a maximum of exactly n - 1 swaps (memory writes) to sort an array of n elements.
+In contrast, Bubble Sort and Insertion Sort can perform up to O(n^2) swaps. 
+In systems where writing to memory is significantly more expensive or damaging than reading from it, selection sort shines.
 
 #insertion sort
