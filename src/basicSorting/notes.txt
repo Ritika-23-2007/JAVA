@@ -41,7 +41,7 @@ and the smallest element is sorted first at leftmost position
 cocktail sort is the merged version of standard sort and reversed sort
 in one outer iteration, firstly the inner loop runs as standard bubble sort and then as reversed one.
 this improves the time taken. 
-
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 # What is selection sort?
 Selection sort is a strainghtforward comparison based algorithm.
 It work by repeatedly finding the smallest and largest elements form the unsorted part of array
@@ -64,5 +64,5 @@ This is the primary reason to choose selection sort over other algorithms.
 Selection sort makes a maximum of exactly n - 1 swaps (memory writes) to sort an array of n elements.
 In contrast, Bubble Sort and Insertion Sort can perform up to O(n^2) swaps. 
 In systems where writing to memory is significantly more expensive or damaging than reading from it, selection sort shines.
-
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 #insertion sort
