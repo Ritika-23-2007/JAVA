@@ -20,6 +20,6 @@ public class Main1{
 
         ImageIcon icon1 = new ImageIcon(Main1.class.getResource("/Gui/logo.png"));
         frame.setIconImage(icon1.getImage());
-        frame.getContentPane().setBackground(new Color(208, 166, 232)); // Set the background color of the JFrame's content pane to cyan
+        frame.getContentPane().setBackground(new Color(0x345678)); // Set the background color of the JFrame's content pane to cyan
     }
 } 
