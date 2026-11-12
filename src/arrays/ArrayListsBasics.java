@@ -9,6 +9,8 @@ public class ArrayListsBasics {
 
         // Creating an ArrayList
         ArrayList<Integer> list1 = new ArrayList<>();
+        //we can enter a default initial capacity for the ArrayList, but if we don't specify it, the default capacity is 10.
+        //the default capacity is stated inside the brackets ()
 
         // Adding elements to the ArrayList
         // The add() method is used to add elements to the ArrayList. 
