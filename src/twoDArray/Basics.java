@@ -15,6 +15,7 @@ public class Basics {
             }
             System.out.println();
         }
+        System.out.println("the number of rows is " + arr.length + " and columns is " + arr[0].length);
         sc.close();
     }
 }
