@@ -13,6 +13,7 @@ public class RowWithMaxSum {
                 arr[i][j] = sc.nextInt();
             }
         }
+        //assuming all elements are positive.
         int sum = 0;
         int row = 0;
         for(int i = 0; i < rows; i++) {
